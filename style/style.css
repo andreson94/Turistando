@@ -6,6 +6,7 @@
 
 :root{
     --azul:rgb(0, 59, 110);
+    --laranja: rgb(233, 137, 58);
 }
 
 .flex-container{
@@ -28,7 +29,7 @@ header{
     align-items: center;
     color: white;
     justify-content: space-between;
-    
+    width: auto;
 }
 
 header > h1{
@@ -40,7 +41,13 @@ header .list-items{
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
+    margin-top: 10px;
+}
 
+.list-items li a:hover{
+    color: var(--laranja);
+    cursor: pointer;
+    transition: .5s;
 }
 
 .list-items li a{
@@ -60,6 +67,10 @@ ul li a{
 div img{
     display: block;
     width: 100%;
+}
+
+.flex-container{
+    display: flex;
 }
 
 .apresentacao{
@@ -91,6 +102,12 @@ div img{
     margin: 10px 0px;
 
 }
+
+.btn:hover{
+    background-color: var(--laranja);
+    color: var(--azul);
+    transition: .1s;
+ }
 
 .text-apresentacao p{
     font-size: 1.4em;
@@ -136,8 +153,11 @@ div img{
 }
 
 .container-externo{
+    display: flex;
     background-color: var(--azul);
     width: 100%;
+    padding: auto;
+    margin: auto;
 }
 
 #servicos{
@@ -275,6 +295,7 @@ footer .footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        flex-wrap: wrap;
     }
 
     
@@ -290,15 +311,16 @@ footer .footer{
 
     .btn{
         align-items: center;
-
+        margin: auto;
     }
 
     #quem-somos{
         flex-direction: column-reverse;
     }
 
-    #quem-somos h2 p{
+    #texto-qs h2{
         text-align: center;
+        justify-content: center;
     }
 
     #quem-somos img{

@@ -308,13 +308,19 @@ footer .footer{
 
     .text-apresentacao{
         width: 100%;
-        min-height: 40vh;
+        min-height: 30vh;
     }
 
     .btn{
         align-items: center;
         margin: auto;
     }
+
+    .btn:hover{
+        background-color: var(--laranja);
+        color: white;
+        transition: .1s;
+     }
 
     #quem-somos{
         flex-direction: column-reverse;
